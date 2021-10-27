@@ -31,7 +31,7 @@ public class User extends Account {
 
     @Override
     public void receiveMessage(Account receivedFrom, String message) {
-        System.out.println("Received message in User: " + getUsername());
+        System.out.println("Received message in User: " + getUsername() + " from " + receivedFrom.getUsername());
         System.out.println("The message is: " + message + "\n");
     }
 }

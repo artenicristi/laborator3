@@ -30,7 +30,7 @@ public class Admin extends Account {
 
     @Override
     public void receiveMessage(Account receivedFrom, String message) {
-        System.out.println("Received message in Admin: " + getUsername());
+        System.out.println("Received message in Admin: " + getUsername() + " from " + receivedFrom.getUsername());
         System.out.println("The message is: " + message + "\n");
     }
 
